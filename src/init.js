@@ -1,7 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('.addDancerButton').on('click', function(event) {
+  $('.addDotButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -22,10 +22,26 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 1000,
+      //'<span class="dancer"></span>'
+      
+      '<img class="rocket" src="http://vignette4.wikia.nocookie.net/starwars/images/3/3d/X-wing_Ultimate.png/revision/latest?cb=20150508162001" width="128" height="128">'
+    );
+    $('body').append(dancer.$node);
+  });
+
+  $('.addImageButton').on('click', function(event) {
+    var dancerMakerFunctionName = $(this).data('image-maker-function-name');
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+
+    var dancer = new dancerMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000,
+      '<img class="rocket" src="http://www.clubpenguinwiki.info/static/images/www/thumb/8/88/DeathStarPlanet.PNG/200px-DeathStarPlanet.PNG" width="128" height="128">'
     );
     $('body').append(dancer.$node);
   });
