@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  background-image: url(http://wallpapercave.com/wp/xX2GRj6.gif);
 }
 body{
   margin: 0px;
@@ -9,7 +10,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addXWing, .addDeathStar, .LineUp{
   padding:5px 12px;
   float:right;
 }
@@ -20,8 +21,8 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+.XWing, .DeathStar{
   position:absolute;
 }
+
+.
