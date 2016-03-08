@@ -1,4 +1,4 @@
-var makeDancer = function(top, left, timeBetweenSteps,node) {
+var makeDancer = function(top, left, timeBetweenSteps, node) {
   this.$node = $(node);
   this.left = left;
   this.top = top;
