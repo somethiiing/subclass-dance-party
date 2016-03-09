@@ -1,6 +1,6 @@
 body, html{
   height:100%;
-  background-image: url(http://wallpapercave.com/wp/xX2GRj6.gif);
+  background-image: url(img/background.gif);
 }
 body{
   margin: 0px;
@@ -21,7 +21,7 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.XWing, .DeathStar{
+.XWing, .DeathStar, .explosion{
   position:absolute;
 }
 
