@@ -10,7 +10,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addXWing, .addDeathStar, .LineUp{
+.title, .addDeathStar, .LineUp, .shoot{
   padding:5px 12px;
   float:right;
 }
@@ -25,4 +25,20 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.
+.shot{
+  position:absolute;
+  behavior:url(-ms-transform.htc);
+    /* Firefox */
+    -moz-transform:rotate(225deg);
+    /* Safari and Chrome */
+    -webkit-transform:rotate(225deg);
+    /* Opera */
+    -o-transform:rotate(225deg);
+    /* IE9 */
+    -ms-transform:rotate(225deg);
+    /* IE6,IE7 */
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; 
+
+}
